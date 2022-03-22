@@ -3,6 +3,10 @@ ImageToTextNew
 ### Run project
 Run `docker-compose up -d`
 
+Open `http://localhost:5000` or `http://imagetotext.docker`
+
+(Second option only works if you have container as reverse proxy)
+
 ### Build & upload app2 image to Docker Hub
 
 Run following commands  
