@@ -16,6 +16,8 @@ services:
     image: nginx:alpine
     volumes:
       - ./docker/nginx/files/default.conf:/etc/nginx/conf.d/default.conf:ro
+    environment:
+      VIRTUAL_HOST: imagetotext-api.docker
     depends_on:
       - fastapi
 
