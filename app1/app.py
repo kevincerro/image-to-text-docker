@@ -8,7 +8,7 @@ from playsound import playsound
 ALLOWED_EXTENSIONS = {'txt', 'pdf', 'png', 'jpg', 'jpeg', 'gif'}
 NO_VALID_IMAGE = 'No se ha proporcionado ninguna imagen válida'
 IS_DOCKER_ENV = os.environ.get('IS_DOCKER', 'False') == 'True'
-FASTAPI_URL = 'http://fastapi:5050/upload'
+FASTAPI_URL = 'http://nginx/upload'
 
 if IS_DOCKER_ENV:
     UPLOAD_FOLDER = '/usr/src/app/images'
